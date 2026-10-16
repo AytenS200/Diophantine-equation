@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diophantine"
+version = "1.0.0"
+description = "Diophantine equation solver written from scratch (no solver libraries), with step-by-step explanations"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Aytən Süleymanlı" }]
+dependencies = []
+
+[project.scripts]
+diophantine = "diophantine.cli:entry"
+
+[tool.setuptools]
+packages = ["diophantine", "diophantine.solvers"]
